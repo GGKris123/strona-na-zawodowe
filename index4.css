@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.copy{
+    margin-left: 40%;
+    bottom: 0;
+    }
+footer{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 300px;
+}
+  .coin {
+      font-size: 35px;
+      color: white;
+      padding: 40px 55px;
+      border: 1px solid #FBD000;
+      box-shadow: 0px 0px 9px 3px rgba(196,188,196,1);
+      border-radius: 50%;
+      background-color: #FBD000;
+      cursor: pointer;
+      transition: transform 0.75s;
+      width: 130px;
+  }
+  .coin:active {
+      transform: rotate3d(0, 1, 0, 180deg);
+  }
+  .value {
+    font-size: 25px;
+    opacity: 0;
+  }
+  
+   .coin:active + .value {
+     bottom: 100px;
+    opacity: 1;
+   }
+.logo{
+    width: 50px;
+    margin-top: 23px;
+  }
+.nagłówek2{
+    padding: 30px;
+}
+body{
+    background-color: #fcf3f3;
+}
+h2{
+    padding: 30px;
+    font-size: 40px;
+    width: 90%;
+}
+header{
+    padding: 10px;
+  }
+  section{
+      font-size: 20px;
+      margin-left: 10%;
+      padding-top: 3em;
+      display: flex;
+      flex-direction: column;
+    
+  }
+  article{
+    width: 90%;
+  }
+  img{
+      width:30%;
+      padding-bottom: 30px;
+  }
+  p{
+      max-width: 80%;
+  }
+.dark-mode nav{
+    background-color: blueviolet;
+    color: chartreuse;
+    }
+    .dark-mode{
+      color: #ffffff;
+      background-color: rgb(41, 41, 41);
+    }
+    
+    
+    
+    .mode {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3px 7px;
+      border-radius: 6px;
+      border: none;
+      background: #6E6D70;
+      box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+      color: #DFDEDF;
+    }
+    html {
+      font-size: 10px;
+      font-family: 'Montserrat', sans-serif;
+      
+      
+      }
+  nav {
+      width: 100%;
+      background-color: #2fc4c9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6vh;
+      padding: 2em;
+      position: fixed;
+      z-index: 1;
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  }
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+}
+a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    position: relative;
+    padding: .1em;
+    color: #ffffff;
+    width: 100%;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: #ff00b3;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+a:hover::after {
+    width: 100%;
+}
+.burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 3em;
+    height: .3em;
+    background: #ffffff;
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    img{
+        width: 70%;
+    }
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(8px);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+    body{
+
+      background-color: #fcf3f3;
+    }
+    
+     ul {
+      position: absolute;
+      right: 0;
+      top: 8vh;
+      background-color:#09b8be;
+      height: 45vh;
+      flex-direction: column;
+      text-align: center;
+      transform: translatez(100%);
+      display: none;
+      
+  }
+  
+     ul.active {
+        transform: translate(0%);
+        display:flex ;
+        height: 45vh;
+
+    }
+    
+    a {
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    article{
+        width: 100%;
+        font-size: 15px;
+       
+    }
+    h1{
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    h2{
+        font-size: 20px;
+    }
+   
+  }

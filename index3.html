@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL</title>
+    <link rel="stylesheet" href="index3.css">
+   
+</head>
+<body>
+    <nav>
+        <header> <h1 class="nagłówek">Ciekawostki ze świata gier komputerowych</h1> </header>
+        <button class="mode" onclick="myFunction()"> Zmiana Motywu</button>
+
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Minecraft</a></li>
+            <li><a href="index3.html">League of Legends</a></li>
+            <li><a href="index4.html">Wiedźmin</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+    <section>
+     
+        <article><h2>20 ciekawostek z LoL</h2></article>
+        <article><p>
+            League of Legends poza grafiką, muzyką i rozgrywką posiada w sobie nieco ciekawostek. A o niektórych z nich dowiecie się z tego artykułu!
+        </p></article><br><br>
+        <article><p>1.Imię Ashe oznacza “jedno plemię, jeden lud, jeden Freljord”.</p><img src="alol/ashe.jpg" alt="">
+        <article><p>2.Aatrox jest jednym z przedstawicieli rasy Darkinów (żyjących), których do tej pory pozostało tylko pięciu, a było ich więcej.</p></article><img src="/alol/aatrox.webp" alt="">
+        <article><p>
+            3.W czasach swojej młodości, Mundo studiował medycynę.
+        </p></article>
+        <img src="/alol/mundo.jpg" alt="">
+        <article><p>4.Skórka czarnego Alistara była dostępna tylko w edycji kolekcjonerskiej.</p></article>
+        <img src="/alol/balistar.jpg" alt="">
+        <article><p>5.Azir był pierwszym bohaterem League of Legends, który mógł tworzyć od nowa wieżę w zniszczonym już miejscu.</p></article>
+        <img src="alol/azir.jpg" alt="">
+        <article><p>6.Azir ma trzy kwestie, które wypowiada po zabiciu smoka: <br>
+
+            „Nie pokona nas byle smok.”<br>
+            
+            „Nie boję się smoków.”<br>
+            
+            „Nawet smoki fascynuje potęga słońca.”</p></article>
+            <img src="alol/azir2.jpg" alt="">
+            <article><p>7.Darius gardzi czarną magią (nekromancją).</p></article>
+            <img src="alol/darek.jpg" alt="">
+            <article><p>8.Lee Sin podpalił się podczas protestu, więc on sam jest sprawcą tego, że nie ma oczu.</p></article>
+            <img src="/alol/lee sin.jpg" alt="">
+            <article><p>9.Ivern podczas jednej z bitew zadał cios bogini wierzby toporem, przez co przerodził się w tego, kim jest teraz.</p></article>
+            <img src="/alol/ivern.jpg" alt="">
+            <article><p>10.W pierwszym roku od premiery LoL-a, zarejestrowano ponad milion pobrań.</p></article>
+            <img src="/alol/10riot.jpg" alt="">
+            <article><p>11.Graves poznał Twisted Fate podczas gry w karty o bardzo wysoką stawkę. Wtedy to zawiązał z nim sojusz.</p></article>
+            <img src="/alol/gravesandtf.jpg" alt="">
+            <article><p>12.Graves jest poszukiwany przez cały świat.</p></article>
+            <img src="alol/gravessolo.jpg" alt="">
+            <article><p>13.Sivir jest płatnym zabójcą.</p></article>
+            <img src="alol/sivir.jpg" alt="">
+            <article><p>14.Master Yi nauczał Wukonga, pod warunkiem, że ten przekaże kiedyś tę wiedzę dla swojego potomka.</p></article>
+            <img src="/alol/maasterwukong.jpg" alt="">
+            <article><p>15.Leona była przyjaciółką z dzieciństwa Pantheona. Ten jednak nie przepadał za nią z powodu jej pokojowego nastawienia.</p></article>
+            <img src="/alol/panthandleona.jpg" alt="">
+            <article><p>16.Ashe miała matkę, która zginęła podczas, gdy ta miała dopiero 15 lat.</p></article>
+            <img src="/alol/ashe2.jpg" alt="">
+            <article><p>17.Wszystkie umiejętności pasywne i aktywne Mordekaisera są nawiązane do piosenek heavy metalowych. Przykładowo “Iron Man” od zespołu “Black Sabath” lub “Mace of Space” do “Ace of Spades – Motorhead”.</p></article>
+            <img src="/alol/mordekaiser.jpg" alt="">
+            <article><p>18.Viktor sam zmodyfikował swoje ciało.</p></article>
+            <img src="alol/victor.jpg" alt="">
+            <article><p>19.Najszybszy mecz rankingowy w historii League of Legends trwał około 5-6 minut.</p></article>
+            <img src="alol/ranked.jpg" alt="">
+            <article><p>20.Jax walczy latarnią, gdyż kiedyś obiecał to Wysokiej Radzie.</p></article>
+            <img src="alol/jax.jpg" alt="">
+        
+    </section>
+    <footer>
+        <img class="image" src="./alol/lollogo3.png" alt="">
+        <p class="copy">Strona przygotowana przez Krystiana Budka  ©</p>
+    </footer>
+    <script>
+
+
+        const mobileNav = document.querySelector('ul');
+        const burgerIcon = document.querySelector('.burger');
+        
+        
+        
+        burgerIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            burgerIcon.classList.toggle('active'); 
+           
+        })
+        
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+        
+        
+        </script>
+</body>
+</html>

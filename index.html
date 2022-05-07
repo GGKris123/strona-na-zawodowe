@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciekawostki</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+     
+    <nav>
+        <header> <h1 class="nagłówek">Ciekawostki ze świata gier komputerowych</h1> </header>
+        <button class="mode" onclick="myFunction()"> Zmiana Motywu</button>
+
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Minecraft</a></li>
+            <li><a href="index3.html">League of Legends</a></li>
+            <li><a href="index4.html">Wiedźmin</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+
+    <article>
+        <section class="tresc">
+            <p>
+            Każda osoba na pewno jest w stanie znaleść dla siebie grę w która idealnie będzie dla niej pasować i spędzi w niej setki jak nie tysiące godzin. 
+Jedni wolą te opierające się na powolnym rozwijaniu się, inni wolą toczyć w grach epickickie pojedynki, a jeszcze inna wolą takie gry, 
+którę wymagają wielkorotnej analizy przed wykonaniem ruchu. Znajdą się też tacy którzy uwielbiają wiedzieć o grach  więcej niz osoby spędzające w grze nawet setki jak nie tysiące godzin. 
+Właśnie dla takich osób stworzona jest ta strona. W zakładkach znajdzież ciekawostki na temat różnych gier takich jak:
+            <br> -Minecraft 
+            <br> -LoL
+            <br> -Wiedźmin
+        </p>
+       </section>
+       <section class="kostka">
+        <div id="perspektywa">
+            <div id="rodzic">
+      
+              <div id="przod">
+                <img src="logozw.png" alt="">
+              </div>
+      
+              <div id="tyl">
+                <img src="mcglogo.jpg" alt="">
+              </div>
+      
+              <div id="lewo">
+                <img src="witcherlogo.jpg" alt="">
+              </div>
+      
+              <div id="prawo">
+                <img src="lololog.png" alt="">
+              </div>
+      
+              
+      
+            </div>
+          </div>
+        </section>
+    </article>
+        <div class="container">
+            <div class="ball">Strone</div>
+            <div class="ball">przygototwał</div>
+            <div class="ball">Krystian</div>
+            <div class="ball">Budka</div>
+            <div class="ball">z</div>
+            <div class="ball">klasy</div>
+            <div class="ball">1TP</div>
+          </div>
+          <footer>
+            
+          </footer>
+          
+          
+          
+    
+
+    
+<script>
+
+
+const mobileNav = document.querySelector('ul');
+const burgerIcon = document.querySelector('.burger');
+
+
+
+burgerIcon.addEventListener('click', function(){
+    mobileNav.classList.toggle('active');
+    burgerIcon.classList.toggle('active'); 
+   
+})
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+</script>
+</body>
+</html>
